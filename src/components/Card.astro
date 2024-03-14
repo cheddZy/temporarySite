@@ -1,0 +1,27 @@
+---
+import textCard from "./textCard.astro";
+import TextCard from "./textCard.astro";
+import ImageCard from "./imageCard.astro";
+---
+
+<section>
+
+    <ImageCard/>
+    <TextCard/>
+
+</section>
+
+
+<style>
+    section {
+        flex: 1 1 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media screen and (max-width: 1000px) {
+        section {
+            flex-direction: column;
+        }
+    }
+</style>
