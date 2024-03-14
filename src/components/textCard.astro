@@ -5,7 +5,7 @@ import Logo from '../assets/astroL.svg'
 <div id="heroContainer">
     <div id="textContainer">
         <div id="imageDiv">
-            <Image src={Logo} alt="המשביר"/>
+            <Image loading="eager" src={Logo} alt="המשביר"/>
         </div>
         <h1>שבור ת'ראש יום אחר</h1>
         <p>המשביר הוא בר מסעדה בפלורנטין שבו תוכלו לבלות כשהערך העליון הוא תחושת בית ושייכות</p>
@@ -157,5 +157,14 @@ import Logo from '../assets/astroL.svg'
         flex-direction: row-reverse;
         gap: 0.3rem;
         align-items: center;
+    }
+
+    @media screen and (max-width: 1000px) {
+        img {
+            max-height: 3rem;
+        }
+        #imageDiv {
+            padding: 2rem 0;
+        }
     }
 </style>
