@@ -76,6 +76,7 @@ import Logo from '../assets/astroL.svg'
     #textContainer {
         max-width: 700px;
         width: 100%;
+        padding: 0 2%;
     }
 
     #iconContainer {
@@ -107,14 +108,16 @@ import Logo from '../assets/astroL.svg'
     }
 
     p {
-        font-size: 1.1rem;
+        font-size: 1rem;
         opacity: 0.7;
+        text-wrap: balance;
     }
 
     hr {
         opacity: 0.1;
         margin-top: 1rem;
         width: 100%;
+        max-width: 700px;
     }
 
     h1, p {
@@ -129,6 +132,7 @@ import Logo from '../assets/astroL.svg'
         border-radius: 2rem;
         border: solid rgba(0, 0, 0, 0.2) 1px;
         background-color: transparent;
+        cursor: pointer;
         &.btnOrder {
             background-color: black;
             color: white;
